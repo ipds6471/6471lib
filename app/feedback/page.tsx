@@ -90,7 +90,6 @@ export default function Page() {
     if (responseData.success) {
       console.log("berhasil submit");
       setTimeout(() => {
-        setPobar((v) => (v >= 100 ? 0 : v + 10));
         reset();
       }, 3000);
     }
@@ -112,13 +111,6 @@ export default function Page() {
     return (
       <div className="flex flex-col items-center justify-center">
         <b className="text-3xl">Terima kasih atas penilaiannya!</b>
-        <Progress
-          aria-label="Downloading..."
-          size="sm"
-          value={pobar}
-          color="success"
-          className="w-full"
-        />
       </div>
     );
   }
