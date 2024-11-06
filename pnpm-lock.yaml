@@ -30,6 +30,9 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.1.0
         version: 1.1.0(react@19.0.0-rc-cd22717c-20241013)(types-react@19.0.0-rc.1)
+      '@react-types/shared':
+        specifier: ^3.25.0
+        version: 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@tailwindcss/forms':
         specifier: ^0.5.7
         version: 0.5.7(tailwindcss@3.4.4)
@@ -3994,7 +3997,7 @@ snapshots:
       '@react-aria/link': 3.7.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/breadcrumbs': 3.7.5(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4005,7 +4008,7 @@ snapshots:
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/toggle': 3.7.8(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/button': 3.10.0(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4019,7 +4022,7 @@ snapshots:
       '@react-stately/calendar': 3.5.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/button': 3.9.4(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/calendar': 3.4.6(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
       react-dom: 19.0.0-rc-cd22717c-20241013(react@19.0.0-rc-cd22717c-20241013)
@@ -4035,7 +4038,7 @@ snapshots:
       '@react-stately/form': 3.0.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/toggle': 3.7.4(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/checkbox': 3.8.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4054,7 +4057,7 @@ snapshots:
       '@react-stately/form': 3.0.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/button': 3.10.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/combobox': 3.11.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
       react-dom: 19.0.0-rc-cd22717c-20241013(react@19.0.0-rc-cd22717c-20241013)
@@ -4077,7 +4080,7 @@ snapshots:
       '@react-types/calendar': 3.4.10(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/datepicker': 3.7.4(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/dialog': 3.5.13(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
       react-dom: 19.0.0-rc-cd22717c-20241013(react@19.0.0-rc-cd22717c-20241013)
@@ -4097,7 +4100,7 @@ snapshots:
     dependencies:
       '@react-aria/interactions': 3.21.3(react@19.0.0-rc-cd22717c-20241013)
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       clsx: 2.1.1
       react: 19.0.0-rc-cd22717c-20241013
@@ -4125,7 +4128,7 @@ snapshots:
       '@react-aria/interactions': 3.21.3(react@19.0.0-rc-cd22717c-20241013)
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/form': 3.0.6(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4175,7 +4178,7 @@ snapshots:
     dependencies:
       '@react-aria/ssr': 3.9.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4197,7 +4200,7 @@ snapshots:
   '@react-aria/label@3.7.8(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4230,7 +4233,7 @@ snapshots:
       '@react-stately/collections': 3.11.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/list': 3.10.5(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/listbox': 3.5.2(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
       react-dom: 19.0.0-rc-cd22717c-20241013(react@19.0.0-rc-cd22717c-20241013)
@@ -4266,7 +4269,7 @@ snapshots:
       '@react-stately/tree': 3.8.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/button': 3.10.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/menu': 3.9.9(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
       react-dom: 19.0.0-rc-cd22717c-20241013(react@19.0.0-rc-cd22717c-20241013)
@@ -4341,7 +4344,7 @@ snapshots:
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/radio': 3.10.4(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/radio': 3.8.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4352,7 +4355,7 @@ snapshots:
       '@react-aria/interactions': 3.21.3(react@19.0.0-rc-cd22717c-20241013)
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/selection': 3.17.0(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
       react-dom: 19.0.0-rc-cd22717c-20241013(react@19.0.0-rc-cd22717c-20241013)
@@ -4439,7 +4442,7 @@ snapshots:
       '@react-aria/selection': 3.20.1(react-dom@19.0.0-rc-cd22717c-20241013(react@19.0.0-rc-cd22717c-20241013))(react@19.0.0-rc-cd22717c-20241013)
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/tabs': 3.6.6(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/tabs': 3.3.7(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
@@ -4466,7 +4469,7 @@ snapshots:
       '@react-aria/utils': 3.24.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/form': 3.0.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/textfield': 3.9.3(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
@@ -4497,7 +4500,7 @@ snapshots:
     dependencies:
       '@react-aria/ssr': 3.9.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.4(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       clsx: 2.1.1
       react: 19.0.0-rc-cd22717c-20241013
@@ -4532,7 +4535,7 @@ snapshots:
       '@internationalized/date': 3.5.6
       '@react-stately/utils': 3.10.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/calendar': 3.4.6(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4541,13 +4544,13 @@ snapshots:
       '@react-stately/form': 3.0.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.4(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/checkbox': 3.8.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-stately/collections@3.10.7(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4566,7 +4569,7 @@ snapshots:
       '@react-stately/select': 3.6.8(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.4(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/combobox': 3.11.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4578,7 +4581,7 @@ snapshots:
       '@react-stately/overlays': 3.6.7(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.1(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/datepicker': 3.7.4(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4588,7 +4591,7 @@ snapshots:
 
   '@react-stately/form@3.0.3(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4612,7 +4615,7 @@ snapshots:
       '@react-stately/collections': 3.11.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/selection': 3.17.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.4(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4629,7 +4632,7 @@ snapshots:
     dependencies:
       '@react-stately/overlays': 3.6.11(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/menu': 3.9.9(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4660,7 +4663,7 @@ snapshots:
       '@react-stately/form': 3.0.6(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.4(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/radio': 3.8.1(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4706,7 +4709,7 @@ snapshots:
   '@react-stately/tabs@3.6.6(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
       '@react-stately/list': 3.11.0(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/tabs': 3.3.7(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
@@ -4737,7 +4740,7 @@ snapshots:
       '@react-stately/collections': 3.11.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/selection': 3.17.0(react@19.0.0-rc-cd22717c-20241013)
       '@react-stately/utils': 3.10.4(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       '@swc/helpers': 0.5.13
       react: 19.0.0-rc-cd22717c-20241013
 
@@ -4769,13 +4772,13 @@ snapshots:
 
   '@react-types/accordion@3.0.0-alpha.21(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/breadcrumbs@3.7.5(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
       '@react-types/link': 3.5.8(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/button@3.10.0(react@19.0.0-rc-cd22717c-20241013)':
@@ -4785,7 +4788,7 @@ snapshots:
 
   '@react-types/button@3.9.4(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/calendar@3.4.10(react@19.0.0-rc-cd22717c-20241013)':
@@ -4797,7 +4800,7 @@ snapshots:
   '@react-types/calendar@3.4.6(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
       '@internationalized/date': 3.5.6
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/checkbox@3.8.1(react@19.0.0-rc-cd22717c-20241013)':
@@ -4812,7 +4815,7 @@ snapshots:
 
   '@react-types/combobox@3.11.1(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/datepicker@3.7.4(react@19.0.0-rc-cd22717c-20241013)':
@@ -4820,7 +4823,7 @@ snapshots:
       '@internationalized/date': 3.5.6
       '@react-types/calendar': 3.4.10(react@19.0.0-rc-cd22717c-20241013)
       '@react-types/overlays': 3.8.10(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/dialog@3.5.13(react@19.0.0-rc-cd22717c-20241013)':
@@ -4863,7 +4866,7 @@ snapshots:
   '@react-types/menu@3.9.9(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
       '@react-types/overlays': 3.8.10(react@19.0.0-rc-cd22717c-20241013)
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/overlays@3.8.10(react@19.0.0-rc-cd22717c-20241013)':
@@ -4883,12 +4886,12 @@ snapshots:
 
   '@react-types/radio@3.8.1(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/select@3.9.4(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/select@3.9.7(react@19.0.0-rc-cd22717c-20241013)':
@@ -4922,12 +4925,12 @@ snapshots:
 
   '@react-types/tabs@3.3.7(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/textfield@3.9.3(react@19.0.0-rc-cd22717c-20241013)':
     dependencies:
-      '@react-types/shared': 3.23.1(react@19.0.0-rc-cd22717c-20241013)
+      '@react-types/shared': 3.25.0(react@19.0.0-rc-cd22717c-20241013)
       react: 19.0.0-rc-cd22717c-20241013
 
   '@react-types/textfield@3.9.7(react@19.0.0-rc-cd22717c-20241013)':
