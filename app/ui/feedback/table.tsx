@@ -22,6 +22,10 @@ const columns = [
     label: "Waktu",
   },
   {
+    key: "name",
+    label: "Nama",
+  },
+  {
     key: "q1",
     label: "Q1",
   },
@@ -119,11 +123,7 @@ export default function FeedbackTable({
         {(column) => (
           <TableColumn
             key={column.key}
-            align={
-              column.key === "value" || column.key === "created_at"
-                ? "start"
-                : "center"
-            }
+            align={column.key === "created_at" ? "start" : "center"}
           >
             {column.label}
           </TableColumn>

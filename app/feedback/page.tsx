@@ -26,6 +26,7 @@ import {
   Button,
   useDisclosure,
   Divider,
+  Input,
 } from "@nextui-org/react";
 
 // icon
@@ -77,10 +78,12 @@ export default function Page() {
       errors.q8 ||
       errors.q9 ||
       errors.q10 ||
-      errors.feedback
+      errors.feedback ||
+      errors.name
     ) {
       setValue("feedback", 0);
     }
+    console.log(errors);
   }, [errors]);
 
   // form submit function
@@ -201,7 +204,38 @@ export default function Page() {
 
   return (
     <div className="flex flex-col items-center gap-4 pt-4">
-      <b className="text-3xl">Bagaimana dengan pelayanan yang diterima?</b>
+      <div className="flex gap-1">
+        <b className="text-2xl flex-grow text-nowrap">
+          Bagaimana dengan pelayanan yang diterima oleh
+        </b>
+        <div className="flex flex-col gap-2">
+          <Input
+            autoFocus
+            type="text"
+            variant="underlined"
+            size="sm"
+            color="primary"
+            radius="md"
+            classNames={{
+              input: [
+                `${
+                  errors.name ? "border-red-500 border-4" : "border-transparent"
+                } rounded-lg text-lg active:border-transparent focus-visible:border-transparent`,
+              ],
+              inputWrapper: ["border-solid"],
+              mainWrapper: ["border-transparent active:border-transparent"],
+              base: ["border-transparent active:border-transparent"],
+            }}
+            onValueChange={(v) => {
+              setValue("name", v);
+            }}
+          />
+          <p className="text-red-500 font-semibold text-sm px-3">
+            {errors.name?.message}
+          </p>
+        </div>
+        <b className="text-3xl">?</b>
+      </div>
       <div className="grid grid-cols-4 gap-4 px-4">
         <div className="flex flex-col items-right text-right text-lg justify-center">
           <p>{feedbackQuestion(1)}</p>
@@ -483,7 +517,8 @@ export default function Page() {
         errors.q8 ||
         errors.q9 ||
         errors.q10 ||
-        errors.feedback) && (
+        errors.feedback ||
+        errors.name) && (
         <div className="flex gap-2 items-center">
           <ExclamationTriangleIcon className="size-7 text-red-500 pt-1" />
           <p className="text-red-500 font-semibold text-2xl">
@@ -493,6 +528,7 @@ export default function Page() {
         </div>
       )}
       <form onSubmit={handleSubmit(onSubmit)} className="hidden">
+        <input {...register("name")} type="string" required />
         <input {...register("q1")} type="number" required />
         <input {...register("q2")} type="number" required />
         <input {...register("q3")} type="number" required />

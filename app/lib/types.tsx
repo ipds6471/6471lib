@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 export const feedbackSchema = z.object({
+  name: z.string().min(3, "Nama minimal 3 karakter"),
   q1: z.coerce
     .number()
     .min(1, "Mohon pilih tingkat kepuasan Anda")

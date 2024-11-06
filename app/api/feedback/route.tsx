@@ -20,6 +20,7 @@ export async function POST(request: Request) {
 
   //   add to db
   if (result.success) {
+    const name = result.data.name;
     const q1 = result.data.q1;
     const q2 = result.data.q2;
     const q3 = result.data.q3;
@@ -33,8 +34,8 @@ export async function POST(request: Request) {
     const feedback = result.data.feedback;
     try {
       await client.sql`
-          INSERT INTO feedback (q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,value)
-          VALUES (${q1}, ${q2}, ${q3}, ${q4}, ${q5}, ${q6}, ${q7}, ${q8}, ${q9}, ${q10}, ${feedback})
+          INSERT INTO feedback (name,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,value)
+          VALUES (${name},${q1}, ${q2}, ${q3}, ${q4}, ${q5}, ${q6}, ${q7}, ${q8}, ${q9}, ${q10}, ${feedback})
           ON CONFLICT (id) DO NOTHING;
         `;
       //   return response

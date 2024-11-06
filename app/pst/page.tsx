@@ -7,16 +7,21 @@ export default function Page() {
     {
       title: "Perpustakaan",
       img: "/pst/library.jpg",
-      url: "https://www.google.com/",
+      url: "https://perpustakaan.bps.go.id/digilib/",
+    },
+    {
+      title: "Katalog Publik",
+      img: "/pst/catalog.jpg",
+      url: "https://perpustakaan.bps.go.id/opac//",
     },
     {
       title: "Buku Tamu BPS",
       img: "/pst/guest.jpg",
-      url: "https://www.google.com/",
+      url: "https://perpustakaan.bps.go.id/digilib/guestbook/",
     },
     {
       title: "Website BPS Kota Balikpapan",
-      img: "/pst/office.jpg",
+      img: "/pst/office-building.jpg",
       url: "https://www.balikpapankota.bps.go.id/",
     },
   ];

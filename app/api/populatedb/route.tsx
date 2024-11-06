@@ -9,6 +9,7 @@ async function seedFeedback() {
   await client.sql`
     CREATE TABLE IF NOT EXISTS feedback (
         id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+        name VARCHAR(128) NOT NULL,
         q1 INT NOT NULL,
         q2 INT NOT NULL,
         q3 INT NOT NULL,
