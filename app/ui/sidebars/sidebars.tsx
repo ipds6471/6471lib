@@ -23,13 +23,14 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   HeartIcon,
+  BuildingLibraryIcon,
 } from "@heroicons/react/20/solid";
 import clsx from "clsx";
 
 type SidebarContextType = true | false;
 export const SidebarContext = createContext<SidebarContextType>(true);
 
-export default function Sidebars() {
+export default function Sidebars({ appVer }: { appVer: string | undefined }) {
   const screenSize = useScreenSize();
   const [expanded, setExpanded] = useState(true);
   //   768
@@ -48,11 +49,11 @@ export default function Sidebars() {
           className={`flex ${expanded ? "justify-between" : "justify-center"}`}
         >
           <div className={`items-center gap-3 ${expanded ? "flex" : "hidden"}`}>
-            <HeartIcon className="size-10" />
+            <BuildingLibraryIcon className="size-10" />
             <div className="flex flex-col">
               <Link key="/" href="/" className="">
                 <p className={`${montserrat.className} text-md font-bold`}>
-                  Project Template
+                  6471 Library
                 </p>
               </Link>
             </div>
@@ -85,7 +86,7 @@ export default function Sidebars() {
             <p className={`${expanded ? "block" : "hidden"}`}>&copy;BPS6471</p>
           </div>
           <p className={`${expanded ? "block" : "hidden"} text-xs pe-3`}>
-            v2.0.0
+            {appVer}
           </p>
         </CardFooter>
       </Card>

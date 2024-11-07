@@ -1,5 +1,3 @@
-"use client";
-
 import "@/app/ui/global.css";
 import { lexend } from "@/app/ui/fonts";
 import { Providers } from "./providers";
@@ -12,12 +10,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const appVer = process.env.APP_VERSION;
   return (
     <html lang="en">
       <body className={`${lexend.className} antialiased`}>
         <Providers>
           <main className="flex min-h-screen flex-row p-6 gap-4">
-            <Sidebars />
+            <Sidebars appVer={appVer} />
             {children}
           </main>
         </Providers>

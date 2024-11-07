@@ -30,7 +30,11 @@ import {
 } from "@nextui-org/react";
 
 // icon
-import { ExclamationTriangleIcon } from "@heroicons/react/20/solid";
+import {
+  ExclamationTriangleIcon,
+  ArrowLongUpIcon,
+  ArrowUpCircleIcon,
+} from "@heroicons/react/20/solid";
 
 export default function Page() {
   // react hook form declaration
@@ -57,6 +61,7 @@ export default function Page() {
       q9: 0,
       q10: 0,
       feedback: 0,
+      name: "",
     },
   });
 
@@ -203,40 +208,44 @@ export default function Page() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-4 pt-4">
-      <div className="flex gap-1">
-        <b className="text-2xl flex-grow text-nowrap">
-          Bagaimana dengan pelayanan yang diterima oleh
+    <div className="flex flex-col items-start gap-4 pt-4">
+      <div className="flex justify-center w-full">
+        <b className="text-2xl text-nowrap">
+          Bagaimana dengan pelayanan yang Anda terima?
         </b>
-        <div className="flex flex-col gap-2">
-          <Input
-            autoFocus
-            type="text"
-            variant="underlined"
-            size="sm"
-            color="primary"
-            radius="md"
-            classNames={{
-              input: [
-                `${
-                  errors.name ? "border-red-500 border-4" : "border-transparent"
-                } rounded-lg text-lg active:border-transparent focus-visible:border-transparent`,
-              ],
-              inputWrapper: ["border-solid"],
-              mainWrapper: ["border-transparent active:border-transparent"],
-              base: ["border-transparent active:border-transparent"],
-            }}
-            onValueChange={(v) => {
-              setValue("name", v);
-            }}
-          />
-          <p className="text-red-500 font-semibold text-sm px-3">
-            {errors.name?.message}
-          </p>
-        </div>
-        <b className="text-3xl">?</b>
       </div>
       <div className="grid grid-cols-4 gap-4 px-4">
+        <div className="flex flex-col items-right text-right text-lg justify-top">
+          <p className="">Nama Anda: </p>
+        </div>
+        <div className="col-span-3">
+          <div className="flex flex-col gap-2">
+            <Input
+              autoFocus
+              type="text"
+              variant="underlined"
+              size="sm"
+              color="primary"
+              radius="md"
+              classNames={{
+                input: [
+                  `${
+                    errors.name
+                      ? "border-red-500 focus:border-red-500 border-0 border-b-4"
+                      : "border-0"
+                  } py-1 px-0 w-full text-lg text-gray-900 bg-transparent appearance-none focus:outline-none focus:ring-0`,
+                ],
+              }}
+              value={fValue.name}
+              onValueChange={(v) => {
+                setValue("name", v);
+              }}
+            />
+            <p className="text-red-500 font-semibold text-sm px-3">
+              {errors.name?.message}
+            </p>
+          </div>
+        </div>
         <div className="flex flex-col items-right text-right text-lg justify-center">
           <p>{feedbackQuestion(1)}</p>
           {errors.q1 && (
@@ -477,56 +486,56 @@ export default function Page() {
             </Card>
           ))}
         </div>
-        <div className="col-span-4">
-          <Divider className="" />
-        </div>
-        <div className="flex flex-col items-right text-right text-lg justify-center">
-          <p>{feedbackQuestion(0)}</p>
-          {errors.feedback && (
-            <p className="text-red-500 font-semibold text-sm">{`${errors.feedback.message}`}</p>
+        <div className="col-span-4 grid grid-cols-4 gap-4 border py-4 rounded-lg border-4 border-black">
+          {(errors.q1 ||
+            errors.q2 ||
+            errors.q3 ||
+            errors.q4 ||
+            errors.q5 ||
+            errors.q6 ||
+            errors.q7 ||
+            errors.q8 ||
+            errors.q9 ||
+            errors.q10 ||
+            errors.feedback ||
+            errors.name) && (
+            <div className="flex col-span-4 gap-2 items-center justify-center">
+              <ArrowUpCircleIcon className="size-7 text-red-500" />
+              <p className="text-red-500 font-semibold text-2xl">
+                Mohon periksa kembali isian Anda
+              </p>
+              <ArrowUpCircleIcon className="size-7 text-red-500" />
+            </div>
           )}
-        </div>
-        <div className="col-span-3 flex gap-2">
-          {overalFace(0).map((item, index) => (
-            <Card
-              shadow="sm"
-              key={index}
-              isPressable
-              className={
-                fValue.feedback == index + 1 ? "border-3 border-success" : ""
-              }
-              onPress={() => {
-                setValue("feedback", item.value);
-                onOpen();
-                // handleSubmit(onSubmit)();
-              }}
-            >
-              <FCardBody item={item} />
-              <FCardFooter item={item} />
-            </Card>
-          ))}
+          <div className="flex flex-col items-right text-right text-lg justify-center">
+            <p>{feedbackQuestion(0)}</p>
+            {errors.feedback && (
+              <p className="text-red-500 font-semibold text-sm">{`${errors.feedback.message}`}</p>
+            )}
+          </div>
+          <div className="col-span-3 flex gap-2">
+            {overalFace(0).map((item, index) => (
+              <Card
+                shadow="sm"
+                key={index}
+                isPressable
+                className={
+                  fValue.feedback == index + 1 ? "border-3 border-success" : ""
+                }
+                onPress={() => {
+                  setValue("feedback", item.value);
+                  onOpen();
+                  // handleSubmit(onSubmit)();
+                }}
+              >
+                <FCardBody item={item} />
+                <FCardFooter item={item} />
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
-      {(errors.q1 ||
-        errors.q2 ||
-        errors.q3 ||
-        errors.q4 ||
-        errors.q5 ||
-        errors.q6 ||
-        errors.q7 ||
-        errors.q8 ||
-        errors.q9 ||
-        errors.q10 ||
-        errors.feedback ||
-        errors.name) && (
-        <div className="flex gap-2 items-center">
-          <ExclamationTriangleIcon className="size-7 text-red-500 pt-1" />
-          <p className="text-red-500 font-semibold text-2xl">
-            Mohon periksa kembali isian Anda
-          </p>
-          <ExclamationTriangleIcon className="size-7 text-red-500 pt-1" />
-        </div>
-      )}
+
       <form onSubmit={handleSubmit(onSubmit)} className="hidden">
         <input {...register("name")} type="string" required />
         <input {...register("q1")} type="number" required />

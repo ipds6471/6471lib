@@ -123,9 +123,13 @@ export default function FeedbackTable({
         {(column) => (
           <TableColumn
             key={column.key}
-            align={column.key === "created_at" ? "start" : "center"}
+            align={
+              column.key === "created_at" || column.key === "name"
+                ? "start"
+                : "center"
+            }
           >
-            {column.label}
+            <p className="text-center">{column.label}</p>
           </TableColumn>
         )}
       </TableHeader>
@@ -133,7 +137,7 @@ export default function FeedbackTable({
         items={rows}
         emptyContent={"Data tidak tersedia"}
         loadingContent={
-          <Spinner label="Loading Data" color="primary" labelColor="primary" />
+          <Spinner label="Memuat Data" color="primary" labelColor="primary" />
         }
         isLoading={loadingState}
       >
